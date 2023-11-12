@@ -1,0 +1,194 @@
+/*overall*/
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Satoshi-Regular', sans-serif;
+    margin: 0 0;
+}
+
+.surrounding {
+    margin: 20px 40px;
+}
+
+/*header*/
+.navrow {
+    display: flex;
+}
+
+.navrow .leftdiv {
+    display: flex;
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: black;
+}
+  
+a:link:active, a:visited:active { 
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*body*/
+.bodydiv {
+    animation: transitionIn 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bodydiv .confirmation {
+    display: flex;
+    margin-top: 40px;
+}
+
+.bodydiv .confirmation .leftdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 40px;
+}
+
+.bodydiv .confirmation .thankyourow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bodydiv .confirmation .thankyourow .confirmed {
+    width: 100px;
+    height: 100px;
+    margin: 0 -20px;
+}
+
+.bodydiv .confirmation .confirmedrow {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle td {
+    vertical-align: top;
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle .leftstyle {
+    text-align: left; 
+    padding-left: 10px; 
+    padding-right: 20px;
+    width: 0;
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle .midstyle {
+    text-align: left; 
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle .rightstyle {
+    text-align: left; 
+    padding-left: 20px; 
+    padding-right: 20px;   
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle .space {
+    width: 5%;
+}
+
+.bodydiv .confirmation .leftdiv .tablestyle .rightstyle img {
+    width: 70px;
+}
+
+.bodydiv .confirmation .leftdiv .buttonrow {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.bodydiv .confirmation .leftdiv .buttonrow .contactus {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.bodydiv .confirmation .leftdiv .buttonrow .contactus .pstyle {
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.bodydiv .confirmation .leftdiv .buttonrow .continueshopping {
+    background-color: #84320D;
+    color: white;
+    height: 30px;
+    padding: 0 16px 0 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.bodydiv .confirmation .rightdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 60px 40px 0 0;
+}
+
+.bodydiv .confirmation .rightdiv .firstcartproduct {
+    display: flex;
+}
+
+.bodydiv .confirmation .rightdiv .points {
+    align-self: center;
+    font-style: italic;
+}
+
+.bodydiv .confirmation .rightdiv .line {
+    border: 0.01px solid black;
+}
+
+.bodydiv .confirmation .rightdiv .lefttable {
+    font-style: italic; 
+    font-weight: lighter;
+}
+
+.bodydiv .confirmation .rightdiv .righttable {
+    font-weight: bolder; 
+    text-align: end;
+}
+
+/*footer*/
+.footerrow {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F5E2;
+    padding: 0 20px 10px 20px;
+    border-top: 1px solid black;
+    margin-top: 100px;
+}
+
+.footerrow .toprow {
+    display: flex; 
+    margin: 0 20px 20px 20px; 
+    gap: 50px;
+}

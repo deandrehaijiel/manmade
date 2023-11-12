@@ -1,0 +1,337 @@
+/*overall*/
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Satoshi-Regular', sans-serif;
+    margin: 0 0;
+}
+
+.surrounding {
+    margin: 20px 40px;
+}
+
+/*header*/
+.navrow {
+    display: flex;
+}
+
+.navrow .leftdiv {
+    display: flex;
+    flex: 1;
+}
+
+.navrow .middiv {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.navrow .middiv .navspace {
+    margin-left: 100px;
+}
+
+.navrow .middiv .navspace:hover {
+    transform: scale(1.2);
+}
+
+.navrow .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-self: center;
+}
+
+.navrow .rightdiv .iconsize {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.navrow .rightdiv .iconsize:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: black;
+}
+  
+a:link:active, a:visited:active { 
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*body*/
+.bodydiv {
+    animation: transitionIn 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bodydiv .headlinediv {
+    background-image: url('../assets/elements/headline.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 40vw;
+    margin-top: 60px;
+}
+
+.bodydiv .headlinediv .headline {
+    text-align: center; 
+    margin-right: 60px;
+    color: white;
+}
+
+.bodydiv .headlinediv .headlinestyle {
+    letter-spacing: 10px;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bodydiv .headlinediv .buttonstyle {
+    padding: 8px 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #84320D;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.bodydiv .shippingdiv {
+    display: flex;
+    background-color: #F8F5E2;
+    margin: 10px 0 40px 0;
+}
+
+.bodydiv .shippingdiv .leftdiv {
+    display: flex;
+    flex: 1;
+    justify-content: start; 
+    align-items: center;
+    margin-left: 40px;
+}
+
+.bodydiv .shippingdiv .middiv {
+    display: flex;
+    flex: 1;
+    justify-content: center; 
+    align-items: center;
+}
+
+.bodydiv .shippingdiv .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: end; 
+    align-items: center;
+    margin-right: 40px;
+}
+
+.bodydiv .shippingdiv .deliveryicons {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.bodydiv .shippingdiv .shippingfont {
+    font-weight: bolder;
+}
+
+.bodydiv .hstyle {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bodydiv .artisanaldiv {
+    display: flex;
+}
+
+.bodydiv .artisanaldiv .columndiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.bodydiv .artisanaldiv .columndiv .buttonstyle {
+    margin-top: 10px;
+    padding: 4px 40px;
+    background-color: #84320D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: lighter;
+}
+
+.bodydiv .upcomingdiv {
+    display: flex;
+    flex: 1;
+    margin: 0 50px;
+    gap: 40px;
+}
+
+.bodydiv .upcomingdiv .leftdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.bodydiv .upcomingdiv .leftdiv .pstyle {
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.bodydiv .upcomingdiv .leftdiv .buttonstyle {
+    margin-top: 20px;
+    padding: 4px 30px;
+    background-color: #84320D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: lighter;
+}
+
+.bodydiv .upcomingdiv .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin: 0 20px 60px 0;
+}
+
+.bodydiv .horizontaldiv {
+    margin: 40px -40px 60px -40px;
+}
+
+.bodydiv .wholediv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.bodydiv .wholediv .leftclick {
+    height: 30px;
+    width: auto;
+    align-self: center;
+}
+
+.bodydiv .wholediv .slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.bodydiv .wholediv .rightclick {
+    transform: rotate(180deg);
+    height: 30px;
+    width: auto;
+    align-self: center;
+}
+
+/*footer*/
+.footerrow {
+    display: flex;
+    background-color: #F8F5E2;
+    padding: 0 20px 10px 20px;
+}
+
+.footerrow .leftdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.footerrow .leftdiv .inputstyle {
+    width: 100%; 
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 6px 6px;
+    background-color: #171717;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.footerrow .leftdiv .buttonstyle {
+    border-radius: 6px;
+    border-color: black;
+    color: white;
+    background-color: #84320D;
+    border-width: 1px;
+}
+
+.footerrow .middiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footerrow .rightdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+table {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    padding-top: 12px;
+}
+
+.footerrow .rightdiv .paymentlogorow {
+    margin-bottom: 20px;
+}
+
+.footerrow .rightdiv .paymentlogorow .firstpaymentlogo {
+    width: 30px;
+    height: auto;
+}
+
+.footerrow .rightdiv .paymentlogorow .paymentlogo {
+    width: 30px;
+    height: auto;
+    padding-left: 20px;
+}

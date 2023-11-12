@@ -1,0 +1,373 @@
+/*overall*/
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Satoshi-Regular', sans-serif;
+    margin: 0 0;
+}
+
+.surrounding {
+    margin: 20px 40px;
+}
+
+/*header*/
+.navrow {
+    display: flex;
+}
+
+.navrow .leftdiv {
+    display: flex;
+    flex: 1;
+}
+
+.navrow .middiv {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.navrow .middiv .navspace {
+    margin-left: 100px;
+}
+
+.navrow .middiv .navspace:hover {
+    transform: scale(1.2);
+}
+
+.navrow .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-self: center;
+}
+
+.navrow .rightdiv .iconsize {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.navrow .rightdiv .iconsize:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: black;
+}
+  
+a:link:active, a:visited:active { 
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*body*/
+.bodydiv {
+    animation: transitionIn 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bodydiv .progressdiv {
+    display: flex;
+    align-self: center;
+}
+
+.bodydiv .progressdiv .line {
+    border: 0.01px dashed black;
+    width: 50px;
+    height: 0.01px;
+    margin-top: 40px;
+    margin-right: -14px;
+    margin-left: -14px;
+}
+
+.bodydiv .progressdiv .progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+}
+
+.bodydiv .progressdiv .progress .fourthpstyle {
+    background-color: #84320D;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    width: 30px;
+    height: 18px;
+}
+
+.bodydiv .progressdiv .progress .pstyle {
+    background-color: #171717;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    width: 30px;
+    height: 18px;
+}
+
+.bodydiv .payment {
+    display: flex;
+}
+
+.bodydiv .payment .leftdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 80px;
+}
+
+.bodydiv .payment .leftdiv .pstyle {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.bodydiv .payment .leftdiv .tablestyle {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.bodydiv .payment .leftdiv .tablestyle .leftstyle {
+    text-align: left; 
+    padding-left: 10px; 
+    padding-right: 20px;
+    width: 0;
+}
+
+.bodydiv .payment .leftdiv .tablestyle .midstyle {
+    text-align: left; 
+}
+
+.bodydiv .payment .leftdiv .tablestyle .rightstyle {
+    text-align: right; 
+    padding-left: 20px; 
+    padding-right: 10px; 
+    width: 0;
+}
+
+.bodydiv .payment .leftdiv .tablestyle .inputstyle {
+    background-color: #171717;
+    padding: 14px 10px;
+    border-radius: 4px;
+    border: none;
+    height: 4px;
+    width: 100%;
+    color: white;
+}
+
+.bodydiv .payment .leftdiv .line {
+    border: 0.01px solid black;
+    margin: 40px 0;
+}
+
+.bodydiv .payment .leftdiv .checkboxstyle {
+    background-color: grey;
+    width: 20px; 
+    height: 20px;
+}
+
+.bodydiv .payment .leftdiv .inputstyle {
+    background-color: black;
+    padding: 14px 10px;
+    border-radius: 4px;
+    border: none;
+    height: 4px;
+    width: 100%;
+    color: white;
+}
+
+.bodydiv .payment .leftdiv .creditcard {
+    height: 30px;
+    width: 30px;
+    padding-left: 12px;
+}
+
+.bodydiv .payment .leftdiv .buttonrow {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.bodydiv .payment .leftdiv .buttonrow .returntocart {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.bodydiv .payment .leftdiv .buttonrow .returntocart .pstyle {
+    text-decoration: underline;
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+.bodydiv .payment .leftdiv .buttonrow .continuetoconfirmation {
+    background-color: #84320D;
+    color: white;
+    height: 30px;
+    padding: 0 46px 0 46px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 14px;
+    padding: 0 30px;
+}
+
+.bodydiv .payment .rightdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 60px 40px 0 0;
+}
+
+.bodydiv .payment .rightdiv .firstcartproduct {
+    display: flex;
+}
+
+.bodydiv .payment .rightdiv .inputdiscount {
+    display: flex; 
+    margin-top: 80px;
+}
+
+.bodydiv .payment .rightdiv .inputdiscount .inputstyle {
+    background-color: #171717;
+    padding: 14px 10px;
+    border-radius: 4px;
+    border: none;
+    height: 4px;
+    width: 100%;
+    color: white;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+.bodydiv .payment .rightdiv .inputdiscount .apply {
+    background-color: #84320D;;
+    color: white;
+    height: 30px;
+    padding: 0 16px 0 16px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 0.5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.bodydiv .payment .rightdiv .line {
+    border: 0.01px solid black;
+}
+
+.bodydiv .payment .rightdiv .lefttable {
+    font-style: italic; 
+    font-weight: lighter;
+}
+
+.bodydiv .payment .rightdiv .righttable {
+    font-weight: bolder; 
+    text-align: end;
+}
+
+/*footer*/
+.footerrow {
+    display: flex;
+    background-color: #F8F5E2;
+    padding: 0 20px 10px 20px;
+}
+
+.footerrow .leftdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.footerrow .leftdiv .inputstyle {
+    width: 100%; 
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 6px 6px;
+    background-color: #171717;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.footerrow .leftdiv .buttonstyle {
+    border-radius: 6px;
+    border-color: black;
+    color: white;
+    background-color: #84320D;
+    border-width: 1px;
+}
+
+.footerrow .middiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footerrow .rightdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+table {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    padding-top: 12px;
+}
+
+.footerrow .rightdiv .paymentlogorow {
+    margin-bottom: 20px;
+}
+
+.footerrow .rightdiv .paymentlogorow .firstpaymentlogo {
+    width: 30px;
+    height: auto;
+}
+
+.footerrow .rightdiv .paymentlogorow .paymentlogo {
+    width: 30px;
+    height: auto;
+    padding-left: 20px;
+}

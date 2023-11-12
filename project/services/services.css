@@ -1,0 +1,269 @@
+/*overall*/
+@font-face {
+    font-family: 'Satoshi-Regular';
+    src: url('../assets/fonts/Satoshi-Regular.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Satoshi-Regular', sans-serif;
+    margin: 0 0;
+}
+
+.surrounding {
+    margin: 20px 40px;
+}
+
+/*header*/
+.navrow {
+    display: flex;
+}
+
+.navrow .leftdiv {
+    display: flex;
+    flex: 1;
+}
+
+.navrow .middiv {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-self: center;
+    font-weight: bolder;
+}
+
+.navrow .middiv .navspace {
+    margin-left: 100px;
+}
+
+.navrow .middiv .navspace:hover {
+    transform: scale(1.2);
+}
+
+.navrow .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-self: center;
+}
+
+.navrow .rightdiv .iconsize {
+    width: auto;
+    height: 30px;
+    padding-left: 20px;
+}
+
+.navrow .rightdiv .iconsize:hover {
+    transform: scale(1.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited { 
+    color: black;
+}
+  
+a:link:active, a:visited:active { 
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*body*/
+.bodydiv {
+    animation: transitionIn 1s;
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bodydiv .headlinediv {
+    width: auto;
+    height: auto;
+    margin-top: 55px;
+}
+
+.bodydiv .wearthemcarethem {
+    display: flex;
+    flex-direction: column;
+}
+
+.bodydiv .tablediv {
+    border: solid 1px black;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+.bodydiv .tablediv .tdstyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 10px;
+}
+
+.bodydiv .tablediv .tdstyle .buttonstyle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 4px 30px;
+    background-color: #84320D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.bodydiv .filter {
+    display: flex;
+}
+
+.bodydiv .filter .leftdiv {
+    display: flex;
+    flex: 1;
+}
+
+.bodydiv .filter .rightdiv {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+}
+
+.bodydiv .line {
+    background-color: black;
+    margin: 0 -40px;
+    width: auto;
+    height: 1px;
+}
+
+
+.bodydiv .servicesdiv {
+    display: flex;
+    margin: 30px 60px;
+}
+
+.bodydiv .servicesdiv .firstservice {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bodydiv .servicesdiv .service {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 100px;
+}
+
+.bodydiv .servicesdiv .pricediv {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.bodydiv .servicesdiv .pricediv .plus {
+    background-color: #F8F5E2;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.bodydiv .loadmorebuttonstyle {
+    padding: 4px 30px;
+    background-color: #84320D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    margin: 30px auto;
+    font-weight: lighter;
+}
+
+/*footer*/
+.footerrow {
+    display: flex;
+    background-color: #F8F5E2;
+    padding: 0 20px 10px 20px;
+}
+
+.footerrow .leftdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+.footerrow .leftdiv .inputstyle {
+    width: 100%; 
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 6px 6px;
+    background-color: #171717;
+    border: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+.footerrow .leftdiv .buttonstyle {
+    border-radius: 6px;
+    border-color: black;
+    color: white;
+    background-color: #84320D;
+    border-width: 1px;
+}
+
+.footerrow .middiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footerrow .rightdiv {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+table {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    padding-top: 12px;
+}
+
+.footerrow .rightdiv .paymentlogorow {
+    margin-bottom: 20px;
+}
+
+.footerrow .rightdiv .paymentlogorow .firstpaymentlogo {
+    width: 30px;
+    height: auto;
+}
+
+.footerrow .rightdiv .paymentlogorow .paymentlogo {
+    width: 30px;
+    height: auto;
+    padding-left: 20px;
+}
